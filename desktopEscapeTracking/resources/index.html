@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Moon Escape</title>
+    <script src="./libraries/paho-mqtt.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Ghost Of Merlin <img id="logo" src="./fullmoonescapelogo.png"></h1>
+    <div id="content"> <span id="game-status">Please Start Game</span>
+        <div id="bomb-timer">
+            <h2>Timer</h2>
+            <div id="timer-display">
+                <span id="min-display">00</span>
+                <span id="seperator">:</span>
+                <span id="sec-display">00</span>
+            </div>
+            <div id="clue-count">
+                <h4>Clue Count</h4>
+                <span id="clue-number"></span>
+            </div>
+            <div id="edit-time">                
+                <button id="subtract-five">-5</button>
+                <button id="subtract-one">-1</button>
+                <button id="add-one">+1</button>
+                <button id="add-five">+5</button>
+            </div>
+            <div id="button-row">
+                <button id="use-clue">Use Clue</button>
+                <button id="undo-clue">Undo Clue</button>
+            </div>
+        </div>
+        <div class="puzzle">
+            <div class="puzzle-title">
+                <h2>Air Puzzle</h2>
+                <div id="light"></div>
+            </div>
+        </div>
+        <div id="clue_container">
+            <button id="clue1">Clue 1</button>
+            <button id="clue2">Clue 2</button>
+            <button id="clue3">Clue 3</button>
+            <button id="clue4">Clue 4</button>
+            <button id="clue5">Clue 5</button>
+            <button id="clue6">Clue 6</button>
+            <button id="clue7">Clue 7</button>
+            <button id="clue8">Clue 8</button>   
+
+        </div>
+
+        <button id="restart">-Restart-</button>
+    </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
