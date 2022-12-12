@@ -1,5 +1,5 @@
 // Create a client instance
-let client = new Paho.MQTT.Client("192.168.3.94", 8484, "controlView");
+let client = new Paho.MQTT.Client("ip", "port", "clientName");
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 
@@ -8,8 +8,8 @@ const clueValue = 3;
 // connect the client
 client.connect({
   onSuccess: onConnect,
-  userName: "fullMoonAdmin",
-  password: "1990"
+  userName: "user name",
+  password: "password"
 
 });
 
